@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-3 {
+        letter-spacing: .01em;
+      }
+
+      .cls-4 {
+        fill: #f7f7fb;
+        font-family: MetalLord-Regular, 'Metal Lord';
+        font-size: 25.06px;
+      }
+    </style>
+  </defs>
+  <text class="cls-4" transform="translate(13.26 87.29)"><tspan x="0" y="0">G</tspan><tspan class="cls-2" x="15.79" y="0">R</tspan><tspan x="29.92" y="0">AV</tspan><tspan class="cls-3" x="64.88" y="0">E</tspan><tspan x="76.5" y="0">FU</tspan><tspan class="cls-1" x="103.94" y="0">R</tspan><tspan x="118.57" y="0">Y</tspan></text>
+</svg>
