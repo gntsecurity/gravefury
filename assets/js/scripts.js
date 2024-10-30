@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const slides = document.querySelectorAll('.hero-image');
     const dots = document.querySelectorAll('.dot');
     let currentSlide = 0;
+    let slideInterval;
 
     function showSlide(index) {
         // Reset all slides and dots
@@ -14,9 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
         currentSlide = index;
     }
 
-    // Auto-change slides every 5 seconds
     function startSlideshow() {
-        setInterval(() => {
+        slideInterval = setInterval(() => {
             currentSlide = (currentSlide + 1) % slides.length;
             showSlide(currentSlide);
         }, 5000);
@@ -29,7 +29,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Add click event listeners to dots
     dots.forEach((dot, index) => {
         dot.addEventListener('click', () => {
+            clearInterval(slideInterval); // Reset interval on manual navigation
             showSlide(index);
+            startSlideshow(); // Restart slideshow after manual change
         });
     });
 });
