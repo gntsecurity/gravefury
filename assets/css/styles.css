@@ -28,7 +28,7 @@ body::before {
 .container {
     text-align: center;
     background: rgba(0, 0, 0, 0.85); /* Semi-transparent black for readability */
-    padding: 50px 40px;
+    padding: 30px 20px; /* Adjust padding for smaller screens */
     border-radius: 20px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
     max-width: 90%;
@@ -40,7 +40,7 @@ body::before {
 /* Heading Style */
 h1 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 4.5rem;
+    font-size: 3.5rem; /* Slightly smaller for better fit on mobile */
     margin: 0 0 20px;
     color: #6EFF00; /* Neon Green */
     text-shadow: 0 0 20px #6EFF00, 0 0 40px #6EFF00;
@@ -48,18 +48,18 @@ h1 {
 
 /* Paragraph Style */
 p {
-    font-size: 1.2rem;
-    margin: 20px 0;
+    font-size: 1rem; /* Reduce text size for readability */
+    margin: 15px 0;
     color: #C0C0C0; /* Subtle Gray */
-    line-height: 1.6; /* Better text spacing */
+    line-height: 1.4; /* Better spacing for smaller text */
 }
 
 /* Button Style */
 .btn {
     display: inline-block;
-    padding: 15px 40px;
+    padding: 12px 30px; /* Adjust button size for mobile */
     margin-top: 20px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #101010; /* Button Text */
     background: #6EFF00; /* Neon Green */
@@ -77,8 +77,8 @@ p {
 
 /* Footer Style */
 footer {
-    margin-top: 30px;
-    font-size: 0.9rem;
+    margin-top: 20px;
+    font-size: 0.8rem; /* Smaller font for mobile */
     color: #6EFF00;
 }
 
@@ -101,5 +101,25 @@ footer a:hover {
     to {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+/* Responsive Design for Mobile Screens */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 3rem; /* Reduce heading size */
+    }
+
+    p {
+        font-size: 0.9rem; /* Further reduce text size */
+    }
+
+    .btn {
+        padding: 10px 25px; /* Smaller buttons */
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.7rem; /* Smaller footer text */
     }
 }
