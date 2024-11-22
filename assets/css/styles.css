@@ -1,0 +1,105 @@
+/* General Styling for Page and Hero */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #171717; /* Base background color */
+    color: #FFFFFF; /* White text */
+    font-family: 'Roboto', sans-serif;
+    height: 100%; /* Full height for the hero */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/GRAVEFURY.png') no-repeat center center;
+    background-size: cover; /* Cover the entire viewport */
+    z-index: -1; /* Send the image to the back */
+}
+
+/* Container for Text Content */
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.85); /* Semi-transparent black for readability */
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+    max-width: 90%;
+    width: 600px;
+    z-index: 1; /* Ensure it appears above the hero image */
+    animation: fadeIn 1.5s ease-in-out; /* Smooth fade-in effect */
+}
+
+/* Heading Style */
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4.5rem;
+    margin: 0 0 20px;
+    color: #6EFF00; /* Neon Green */
+    text-shadow: 0 0 20px #6EFF00, 0 0 40px #6EFF00;
+}
+
+/* Paragraph Style */
+p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #C0C0C0; /* Subtle Gray */
+    line-height: 1.6; /* Better text spacing */
+}
+
+/* Button Style */
+.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #101010; /* Button Text */
+    background: #6EFF00; /* Neon Green */
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 15px #6EFF00, 0 0 20px #6EFF00;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px #6EFF00, 0 0 30px #6EFF00;
+}
+
+/* Footer Style */
+footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #6EFF00;
+}
+
+footer a {
+    color: #6EFF00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
